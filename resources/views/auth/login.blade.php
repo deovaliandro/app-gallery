@@ -23,17 +23,17 @@
 <body>
     <div class="hero is-primary">
         <div class="hero-body">
-            <h1 class="title has-text-centered is-size-2">Login Form in Bulma</h1>
+            <h1 class="title has-text-centered is-size-2">Login</h1>
             <div class="columns is-centered">
                 <div class="column is-half">
                     <div class="notification is-light">
                         <figure class="image container is-64x64">
-                            <img src="bulma.png">
+                            <img src="https://upload.wikimedia.org/wikipedia/id/9/95/Logo_UH.png">
                         </figure>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="field">
-                                <label class="label">Name</label>
+                                <label class="label">Email</label>
                                 <p class="control has-icons-left has-icons-right">
                                     <input class="input" type="email" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                     <span class="icon is-small is-left">
@@ -60,12 +60,13 @@
                                     </span>
                                 @enderror
                             </div>
-                            <button type="submit" class="button is-info is-rounded is-outlined is-medium">{{ __('Login') }}</button>
+                            <button type="submit" class="button is-success">{{ __('Login') }}</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @include('inc.footer')
 </body>
 </html>
