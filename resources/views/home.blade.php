@@ -1,128 +1,123 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="columns is-multiline">
-    <div class="column is-3">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-3by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+<div class="column">
+        <h3 class="title is-2 has-text-centered">"Easy To Use & Great Design"</h3>
+        <p class="subtitle is-4 has-text-centered">Some nice words about us 😳</p>
+    </div>
+    <br>
+    <div class="columns is-centered is-multiline">
+        <div class="column is-4">
+            <div class="box box-shadow-lift">
+                <div class="card-content">	<i class="fal fa-quote-left"></i>
+                    <figure class="image is-4by3 margin-middle">
+                        <img src="{{ asset('img/640x480.png') }}">
+                        </figure>
+                    <div class="media" style="border-top: none">
+                        <div class="media-content has-text-centered" style="margin: 0.9rem 0">
+                            <p class="title is-4">Product Hunt</p>
+                            <p class="subtitle has-text-grey is-6">Reviews on our launch page</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <div class="content">
+                        <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
+                    </div>
+                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="column is-3">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-3by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+        <div class="column is-4">
+            <div class="box box-shadow-lift">
+                <div class="card-content">	<i class="fal fa-quote-left"></i>
+                    <figure class="image is-4by3 margin-middle">
+                        <img src="{{ asset('img/640x480.png') }}">
+                        </figure>
+                    <div class="media" style="border-top: none">
+                        <div class="media-content has-text-centered" style="margin: 0.9rem 0">
+                            <p class="title is-4">Product Hunt</p>
+                            <p class="subtitle has-text-grey is-6">Reviews on our launch page</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <div class="content">
+                        <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
+                    </div>
+                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="column is-3">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-3by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+        <div class="column is-4">
+            <div class="box box-shadow-lift">
+                <div class="card-content">	<i class="fal fa-quote-left"></i>
+                    <figure class="image is-4by3 margin-middle">
+                        <img src="{{ asset('img/640x480.png') }}">
+                        </figure>
+                    <div class="media" style="border-top: none">
+                        <div class="media-content has-text-centered" style="margin: 0.9rem 0">
+                            <p class="title is-4">Product Hunt</p>
+                            <p class="subtitle has-text-grey is-6">Reviews on our launch page</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <div class="content">
+                        <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
+                    </div>
+                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="column is-3">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-3by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+        <div class="column is-4">
+            <div class="box box-shadow-lift">
+                <div class="card-content">	<i class="fal fa-quote-left"></i>
+                    <figure class="image is-4by3 margin-middle">
+                        <img src="{{ asset('img/640x480.png') }}">
+                        </figure>
+                    <div class="media" style="border-top: none">
+                        <div class="media-content has-text-centered" style="margin: 0.9rem 0">
+                            <p class="title is-4">Product Hunt</p>
+                            <p class="subtitle has-text-grey is-6">Reviews on our launch page</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <div class="content">
+                        <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
+                    </div>
+                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="column is-3">
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-3by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="media">
-                    <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
+        <div class="column is-4">
+            <div class="box box-shadow-lift">
+                <div class="card-content">	<i class="fal fa-quote-left"></i>
+                    <figure class="image is-4by3 margin-middle">
+                        <img src="{{ asset('img/640x480.png') }}">
+                        </figure>
+                    <div class="media" style="border-top: none">
+                        <div class="media-content has-text-centered" style="margin: 0.9rem 0">
+                            <p class="title is-4">Product Hunt</p>
+                            <p class="subtitle has-text-grey is-6">Reviews on our launch page</p>
+                        </div>
                     </div>
+                    <div class="content">
+                        <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
+                    </div>
+                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
-
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                    <a href="#">#css</a> <a href="#">#responsive</a>
-                    <br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="box box-shadow-lift">
+                <div class="card-content">	<i class="fal fa-quote-left"></i>
+                    <figure class="image is-4by3 margin-middle">
+                        <img src="{{ asset('img/640x480.png') }}">
+                        </figure>
+                    <div class="media" style="border-top: none">
+                        <div class="media-content has-text-centered" style="margin: 0.9rem 0">
+                            <p class="title is-4">Product Hunt</p>
+                            <p class="subtitle has-text-grey is-6">Reviews on our launch page</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
+                    </div>
+                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
             </div>
         </div>

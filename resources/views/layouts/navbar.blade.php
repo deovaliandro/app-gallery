@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="{{ url('/') }}">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                        <img src="{{ asset('img/logo-coba-01-3.png') }}">
                     </a>
 
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
