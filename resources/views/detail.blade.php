@@ -1,75 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+@extends('layouts.app')
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
-    <section class="hero is-fullheight is-dark" style="background-image: url(/storage/download.jpg)">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-            <header class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
+@section('navbar')
+    @include('inc.heroconten')
+@endsection
 
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
-                    </div>
-
-                    <div id="navbarBasicExample" class="navbar-menu">
-                        <div class="navbar-end">
-                            @guest
-                                <div class="navbar-item">
-                                    <div class="buttons">
-                                        <a class="button is-white is-outlined" href="{{ route('login') }}">
-                                            Log in
-                                        </a>
-                                    </div>
-                                </div>
-                            @else
-                                <div class="navbar-item has-dropdown is-hoverable">
-                                    <a class="navbar-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->name }}
-                                    </a>
-
-                                    <div class="navbar-dropdown">
-                                        <a class="navbar-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                        </a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                </div>
-                            @endguest
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title">
-                    Judul Gambar
-                </h1>
-                <h2 class="subtitle">
-                    Lokasi Penelitian
-                </h2>
-            </div>
-        </div>
-    </section>
+@section('content')
+        
     <section class="section">
         <div class="container is-fluid">
             <div class="columns">
@@ -87,6 +23,4 @@
             </div>
         </div>
     </section>
-    @include('inc.footer')
-</body>
-</html>
+    @endsection

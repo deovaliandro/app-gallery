@@ -14,12 +14,13 @@
 </head>
 <body>
     @include('layouts.navbar')
+    @yield('navbar')
+    
     <section class="section">
         <div class="container is-fluid">
             @yield('content')
         </div>
     </section>
-    @include('inc.footer')
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script defer src="{{ asset('js/icon.js') }}"></script>
 </body>

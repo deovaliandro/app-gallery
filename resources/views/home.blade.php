@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
+@section('navbar')
+    @include('inc.hero')
+@endsection
+
 @section('content')
+
 <div class="column">
         <h3 class="title is-2 has-text-centered">"Easy To Use & Great Design"</h3>
         <p class="subtitle is-4 has-text-centered">Some nice words about us 😳</p>
