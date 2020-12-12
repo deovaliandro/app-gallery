@@ -27,7 +27,7 @@
                     <div class="content">
                         <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
                     </div>
-                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
+                    <hr> <a href="/detail" class="button is-fullwidth" target="" rel="">View More</a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                     <div class="content">
                         <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
                     </div>
-                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
+                    <hr> <a href="/detail" class="button is-fullwidth" target="" rel="">View More</a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                     <div class="content">
                         <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
                     </div>
-                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
+                    <hr> <a href="/detail" class="button is-fullwidth" target="" rel="">View More</a>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                     <div class="content">
                         <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
                     </div>
-                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
+                    <hr> <a href="/detail" class="button is-fullwidth" target="" rel="">View More</a>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                     <div class="content">
                         <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
                     </div>
-                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
+                    <hr> <a href="/detail" class="button is-fullwidth" target="" rel="">View More</a>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                     <div class="content">
                         <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
                     </div>
-                    <hr> <a href="/" class="button is-fullwidth" target="_blank" rel="noopener noreferrer">View More</a>
+                    <hr> <a href="/detail" class="button is-fullwidth" target="" rel="">View More</a>
                 </div>
             </div>
         </div>

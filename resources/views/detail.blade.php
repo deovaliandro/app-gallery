@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('navbar')
-    @include('inc.heroconten')
+    @include('inc.herocontent')
 @endsection
 
 @section('content')
