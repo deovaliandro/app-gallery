@@ -23,5 +23,6 @@
     </section>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script defer src="{{ asset('js/icon.js') }}"></script>
+    @include('inc.footer')
 </body>
 </html>
