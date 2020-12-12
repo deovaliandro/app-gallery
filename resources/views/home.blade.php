@@ -128,4 +128,8 @@
         </div>
     </div>
 </div>
+
+<div class="buttons is-centered">
+    <button class="button is-large is-rounded is-info">Load More Image</button>
+</div>
 @endsection
