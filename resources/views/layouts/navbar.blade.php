@@ -1,4 +1,4 @@
-<section class="hero is-fullheight is-dark">
+
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
         <header class="navbar">

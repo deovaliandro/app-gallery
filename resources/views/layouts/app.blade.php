@@ -13,6 +13,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+    <section class="hero is-fullheight is-dark">
     @include('layouts.navbar')
     @yield('navbar')
     
