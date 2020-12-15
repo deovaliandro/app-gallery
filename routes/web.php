@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/detail', function () {
-    return view('detail');
-});
+Route::get('/detail/{id}', [App\Http\Controllers\HomeController::class, 'show']);
 
 Auth::routes();
 

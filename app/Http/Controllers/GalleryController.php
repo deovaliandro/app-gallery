@@ -7,11 +7,6 @@ use Illuminate\Http\Request;
 
 class GalleryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
 
     public function __construct() {
         $this->middleware('auth', ['except' => ['index']]);
@@ -23,22 +18,11 @@ class GalleryController extends Controller
         return view('gallery.index', ['title' => 'Admin Gallery', 'gallery' => $gallery,]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('gallery.create', ['title' => 'Add Item']);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $this->validate($request,[
@@ -77,37 +61,18 @@ class GalleryController extends Controller
         return redirect('/admin');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Gallery  $gallery
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         $gallery = Gallery::find($id);
         return view('gallery.show', ['title' => 'Detail', 'gallery' => $gallery]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Gallery  $gallery
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $gallery = Gallery::find($id);
         return view('gallery.edit',['title' => 'Edit Gallery', 'gallery' => $gallery]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Gallery  $gallery
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $this->validate($request,[
@@ -146,12 +111,6 @@ class GalleryController extends Controller
         return redirect('/admin');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Gallery  $gallery
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $gallery = Gallery::find($id);
