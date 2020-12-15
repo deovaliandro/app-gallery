@@ -1,21 +1,31 @@
 @extends('layouts.app')
 
 @section('navbar')
-    @include('inc.hero')
+@include('inc.hero')
 @endsection
 
 @section('content')
 
 <div class="column">
-        <h3 class="title is-2 has-text-centered">"Easy To Use & Great Design"</h3>
-        <p class="subtitle is-4 has-text-centered">Some nice words about us 😳</p>
+    <h3 class="title is-2 has-text-centered">"Easy To Use & Great Design"</h3>
+    <p class="subtitle is-4 has-text-centered">Some nice words about us 😳</p>
+</div>
+<form action="/search" method="GET" class="field has-addons" style="justify-content: flex-end;">
+    <div class="control">
+        <input class="input is-danger" type="text" name="search" placeholder="Temukan">
     </div>
-    <br>
-    <div class="columns is-centered is-multiline">
-        @foreach ($gallery as $gl)    
+    <div class="control">
+        <a class="button is-danger">
+            Search
+        </a>
+    </div>
+</form>
+<br>
+<div class="columns is-centered is-multiline">
+    @foreach($gallery as $gl)
         <div class="column is-4">
             <div class="box box-shadow-lift">
-                <div class="card-content">	<i class="fal fa-quote-left"></i>
+                <div class="card-content"> <i class="fal fa-quote-left"></i>
                     <figure class="image is-4by3 margin-middle">
                         @if( ( $gl->photo == NULL ) || ( $gl->photo == "" ) )
                             <img class="" src="{{ asset('img/640x480.png') }}">
@@ -37,12 +47,12 @@
                 </div>
             </div>
         </div>
-        @endforeach
+    @endforeach
 
-    </div>
-    <div class="columns is-centered">
-        {{ $gallery->links('vendor.pagination.tailwind') }}
-    </div>
+</div>
+<div class="columns is-centered">
+    {{ $gallery->links('vendor.pagination.tailwind') }}
+</div>
 </div>
 
 @endsection
