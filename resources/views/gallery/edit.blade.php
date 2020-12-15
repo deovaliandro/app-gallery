@@ -98,7 +98,7 @@
             <div class="field">
                 <div class="file has-name is-fullwidth">
                     <label class="file-label">
-                        <input class="file-input" name="photo" type="file" name="resume">
+                        <input class="file-input" name="photo" type="file" name="resume" value={{ $gallery->photo }}>
                         <span class="file-cta">
                             <span class="file-icon">
                                 <i class="fas fa-upload"></i>
@@ -106,9 +106,6 @@
                             <span class="file-label">
                                 Choose a file…
                             </span>
-                        </span>
-                        <span class="file-name">
-                            Screen Shot 2017-07-29 at 15.54.25.png
                         </span>
                     </label>
                     @if($errors->has('photo'))

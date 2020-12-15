@@ -87,25 +87,31 @@ class GalleryController extends Controller
         
         // menyimpan data file yang diupload ke variabel $file
         $file = $request->file('photo');
-        if(!is_null($file))
+        if($file){
 		    $photo_name = time()."_".$file->getClientOriginalName();
-        else
-            $photo_name = null;
-          
-        // isi dengan nama folder tempat kemana file diupload
-        $upload_folder = 'data_file';
+            $upload_folder = 'data_file';
+            $file->move($upload_folder,$photo_name);
+        }
 
-        if(!is_null($file))
-        $file->move($upload_folder,$photo_name);
+        if($file){
+            $gallery = Gallery::find($id);
+            $gallery->name                     = $request->name;
+            $gallery->category                 = $request->category;
+            $gallery->address                  = $request->address;
+            $gallery->long                     = $request->long;
+            $gallery->lat                      = $request->lat;
+            $gallery->information              = $request->information;
+            $gallery->photo                    = $photo_name;
+        }else{
+            $gallery = Gallery::find($id);
+            $gallery->name                     = $request->name;
+            $gallery->category                 = $request->category;
+            $gallery->address                  = $request->address;
+            $gallery->long                     = $request->long;
+            $gallery->lat                      = $request->lat;
+            $gallery->information              = $request->information;
+        }
 
-        $gallery = Gallery::find($id);
-        $gallery->name                     = $request->name;
-        $gallery->category                 = $request->category;
-        $gallery->address                  = $request->address;
-        $gallery->long                     = $request->long;
-        $gallery->lat                      = $request->lat;
-        $gallery->information              = $request->information;
-        $gallery->photo                    = $photo_name;
 
         $gallery->save();
         return redirect('/admin');
