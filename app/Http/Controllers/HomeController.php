@@ -22,6 +22,6 @@ class HomeController extends Controller
     public function show($id)
     {
         $gallery = Gallery::find($id);
-        return view('gallery.show', ['title' => '$gallery->title', 'gallery' => $gallery]);
+        return view('detail', ['title' => '$gallery->title', 'gallery' => $gallery]);
     }
 }

@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="content">
-                        <p>By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
+                        <p class="limit-text">By far the best design and most features I've seen on a landing page. Definitely one of the best profile builders - and with that price tag, it's just awesome. I like the simplicity and the ease-of-use.</p>
                     </div>
                     <hr>
                     <a href="/detail/{{ $gl->id }}" class="button is-fullwidth" target="" rel="">View More</a>
