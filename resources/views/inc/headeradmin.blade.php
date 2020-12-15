@@ -26,10 +26,7 @@
 </head>
 
 <body>
-
-    <section class="hero is-dark">
-        @include('layouts.navbar')
-    </section>
-
+    @include('layouts.navbar')
+    
     @yield('content')
     @include('inc.footer')
