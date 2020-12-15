@@ -16,7 +16,7 @@ class HomeController extends Controller
     public function index()
     {
         $gallery = Gallery::all();
-        return view('home', ['title' => 'Gallery', 'gallery' => $gallery,]);
+        return view('home', ['title' => 'Gallery', 'gallery' => $gallery]);
     }
 
     public function show($id)
