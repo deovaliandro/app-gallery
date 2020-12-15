@@ -3,19 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
 
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
-        $gallery = Gallery::all();
+        // $gallery = Gallery::all()->paginate(9);
+        $gallery = DB::table('gallery')->paginate(6);
         return view('home', ['title' => 'Gallery', 'gallery' => $gallery]);
     }
 

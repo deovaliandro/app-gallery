@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <section class="hero is-dark">
-        @include('layouts.navbar')
-    </section>
+    
+    @include('layouts.navbar')
+    
     <section class="section">
         <div class="container">
             <div class="card">

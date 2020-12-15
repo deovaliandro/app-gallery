@@ -20,7 +20,7 @@ class CreateGalleryTable extends Migration
             $table->string('address');
             $table->double('lat', 16, 12);
             $table->double('long', 16, 12);
-            $table->string('information')->nullable();
+            $table->text('information');
             $table->text('photo')->nullable();
             $table->timestamps();
         });

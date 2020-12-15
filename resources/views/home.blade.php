@@ -25,8 +25,8 @@
                     </figure>
                     <div class="media" style="border-top: none">
                         <div class="media-content has-text-centered" style="margin: 0.9rem 0">
-                            <p class="title is-4">{{ $gl->title }}</p>
-                            <p class="subtitle has-text-grey is-6">{{ $gl->address }}</p>
+                            <p class="title is-4">{{ $gl->name }}</p>
+                            <p class="subtitle has-text-grey is-6">{{ str_limit($gl->address, 10) }}</p>
                         </div>
                     </div>
                     <div class="content">
@@ -38,6 +38,10 @@
             </div>
         </div>
         @endforeach
+
+    </div>
+    <div class="columns is-centered">
+        {{ $gallery->links('vendor.pagination.tailwind') }}
     </div>
 </div>
 

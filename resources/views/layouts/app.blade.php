@@ -14,9 +14,9 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <section class="hero is-fullheight is-dark">
+    {{-- <section class="hero is-fullheight is-dark"> --}}
     @include('layouts.navbar')
-    @yield('navbar')
+    {{-- @yield('navbar') --}}
     
     <section class="section">
         <div class="container is-fluid">
