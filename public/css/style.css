@@ -9,9 +9,10 @@
     transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1)
 }
 
-.limit-text {
+
+/* .limit-text {
     white-space: nowrap;
     width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+} */
