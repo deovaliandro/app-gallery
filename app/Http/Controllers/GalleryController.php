@@ -15,7 +15,7 @@ class GalleryController extends Controller
     public function index()
     {
         $gallery = Gallery::all();
-        return view('gallery.index', ['title' => 'Admin Gallery', 'gallery' => $gallery,]);
+        return view('gallery.index', ['title' => 'Admin Panel', 'gallery' => $gallery,]);
     }
 
     public function create()
@@ -35,14 +35,12 @@ class GalleryController extends Controller
             'photo'         => 'nullable|file|image|mimes:jpeg,png,jpg|max:2048',
         ]);
         
-        // menyimpan data file yang diupload ke variabel $file
         $file = $request->file('photo');
         if(!is_null($file))
 		    $photo_name = time()."_".$file->getClientOriginalName();
         else
             $photo_name = null;
           
-        // isi dengan nama folder tempat kemana file diupload
         $upload_folder = 'data_file';
 
         if(!is_null($file))
@@ -70,7 +68,7 @@ class GalleryController extends Controller
     public function edit($id)
     {
         $gallery = Gallery::find($id);
-        return view('gallery.edit',['title' => 'Edit Gallery', 'gallery' => $gallery]);
+        return view('gallery.edit',['title' => 'Edit', 'gallery' => $gallery]);
     }
 
     public function update(Request $request, $id)

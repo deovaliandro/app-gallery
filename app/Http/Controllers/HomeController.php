@@ -11,7 +11,6 @@ class HomeController extends Controller
 
     public function index()
     {
-        // $gallery = Gallery::all()->paginate(9);
         $gallery = DB::table('gallery')->paginate(6);
         return view('home', ['title' => 'Gallery', 'gallery' => $gallery]);
     }
@@ -19,7 +18,7 @@ class HomeController extends Controller
     public function show($id)
     {
         $gallery = Gallery::find($id);
-        return view('detail', ['title' => '$gallery->title', 'gallery' => $gallery]);
+        return view('detail', ['title' => $gallery->name, 'gallery' => $gallery]);
     }
 
     public function search(Request $request)
