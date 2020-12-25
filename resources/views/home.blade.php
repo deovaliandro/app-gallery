@@ -16,7 +16,7 @@
     </div>
     <div class="control">
         <a class="button is-danger">
-            Search
+            Pencarian
         </a>
     </div>
 </form>
