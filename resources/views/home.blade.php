@@ -7,8 +7,8 @@
 @section('content')
 
 <div class="column">
-    <h3 class="title is-2 has-text-centered">"Easy To Use & Great Design"</h3>
-    <p class="subtitle is-4 has-text-centered">Some nice words about us 😳</p>
+    <h3 class="title is-2 has-text-centered">"Objek Wisata Sulawesi Selatan"</h3>
+    <p class="subtitle is-4 has-text-centered">Hasil Penelitian Universitas Hasanuddin</p>
 </div>
 <form action="/search" method="GET" class="field has-addons" style="justify-content: flex-end;">
     <div class="control">
